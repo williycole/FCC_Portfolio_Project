@@ -1,0 +1,30 @@
+/*Mobile first nav-bar*/
+#navbar{
+    /*writing-mode: vertical-lr;*/
+    position: fixed;
+      display: grid;
+      box-sizing: border-box;
+      height: max-content;
+      grid-area: 3 / 3 / 4 / 7;
+      background: transparent;
+      color: white;
+      border-style: solid;
+      width: 100%;
+}
+/*Desktop nav-bar*/
+@media (min-width: 768px){
+  #navbar{
+    position: fixed;
+    
+    
+      display: grid;
+      box-sizing: border-box;
+      float: left;
+      height: max-content;
+      grid-area: 3 / 3 / 4 / 7;
+      background: transparent;
+      color: white;
+      border-style: solid;
+      width: 100%;
+    } 
+}
