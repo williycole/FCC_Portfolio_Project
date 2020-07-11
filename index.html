@@ -8,10 +8,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 
 <body>
-
     <nav id="navbar">
         <div class="link-background">
             <ul class="menu">
@@ -24,84 +24,97 @@
                 <li><a href="#projects" class="hover4">Projects</a></li>
                 <li><a href="#techs" class="hover5">Techs</a></li>
                 <li><a href="#contact" class="hover6">Contact</a></li>
-
             </ul>
         </div>
     </nav>
-
-    <div id="welcome-section">
-        <div id="profile-pic-row">
-            <img src="fishing.jpg" alt="Picture of Me Fishing" id="profile-pic">
+    <!-------------------------------------this is the whole page div--------------------------------------------->
+    <main>
+        <!-------------------------------------this is the whole page div--------------------------------------------->
+        <div id="welcome-section">
+            <div id="profile-pic-row">
+                <img src="fishing.jpg" alt="Picture of Me Fishing" id="profile-pic">
+            </div>
+            <div id="media-platforms">
+                <!--<i class="fa fa-github" aria-hidden="true"></i>-->
+                <a href="https://github.com/williycole">
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a href="https://www.freecodecamp.org/williy_cole">
+                    <i class="fab fa-free-code-camp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/cole-boren-4b0b3a50/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <h1 id="welcome-name">
+                William Cole Boren @Williy_Cole
+            </h1>
+            <p id="whatIDo">Aspiring Front-end Developer HTML, CSS, JavaScript</p>
         </div>
-        <div id="media-platforms">
-            <p>media icons</p>
-            <!--look at other profile with css spice to see how they did it This is Where my github, facebook, and linked in icons will go
-            they likely should be inline grid items an alinged center Make them all a dull culler that lights up
-            like the text that you have underlined-->
-        </div>
-        <h1 id="welcome-name">
-            William Cole Boren @Williy_Cole
-        </h1>
-        <p id="whatIDo">Aspiring Front-end Developer Html, CSS, JavaScript</p>
+        <div id="containerMyInfo">
+            <div id="about">
+                <h1 class="about-title">
+                    about
+                </h1>
+                <h2>more text</h2>
+                <h3>more and more</h3>
+                <p>a paragraph</p>
+                <p>a paragraph</p>
+                <p>a paragraph</p>
+            </div>
+            <div id="skills">
+                <h1 class="skills-what-I-am-learning">
+                    skills
+                </h1>
+                <h2>more text</h2>
+                <h3>more and more</h3>
+                <p class="fcc-what-i-am-learning">some text
+                    <a href="https://www.freecodecamp.org/fcc70c29d97-b9ce-4435-9a79-ce9208e0c574"
+                        class="body-links">FCC
+                        Progression</a>
+                </p>
+                <p>a paragraph</p>
+                <p>a paragraph</p>
+            </div>
+            <div id="projects">
+                <h1 class="project-tile">
+                    projects
+                </h1>
+                <h2>more text</h2>
+                <h3>more and more</h3>
+                <p id="project-link">check my project
+                    <a href="https://williycole.github.io/Product_Landing_Page/" class="body-links">product landing
+                        page</a>
+                </p>
+                <p>a paragraph</p>
+                <p>a paragraph</p>
+            </div>
+            <div id="techs">
+                <h1 class="techs-title">
+                    techs
+                </h1>
+                <h2>more text</h2>
+                <h3>more and more</h3>
+                <p>a paragraph</p>
+                <p>a paragraph</p>
+                <p>a paragraph</p>
+            </div>
+            <div id="contact">
+                <h1 class="contact-title">
+                    contact
+                </h1>
+                <h2>more text</h2>
+                <h3>more and more</h3>
+                <p>check me out at
+                    <a id="profile-link" href="https://github.com/williycole" target="_blank"
+                        class="body-links">GitHub</a>
+                <p>a paragraph</p>
+                <p>a paragraph</p>
+                <!-------------------------------------this is the whole page div--------------------------------------------->
+            </div>
+    </main>
+    <!-------------------------------------this is the whole page div--------------------------------------------->
     </div>
-    <div id="about">
-        <h1 class="about-title">
-            about
-        </h1>
-        <h2>more text</h2>
-        <h3>more and more</h3>
-        <p>a paragraph</p>
-        <p>a paragraph</p>
-        <p>a paragraph</p>
-    </div>
-    <div id="skills">
-        <h1 class="skills-what-I-am-learning">
-            skills
-        </h1>
-        <h2>more text</h2>
-        <h3>more and more</h3>
-        <p class="fcc-what-i-am-learning">some text
-            <a href="https://www.freecodecamp.org/fcc70c29d97-b9ce-4435-9a79-ce9208e0c574" class="body-links">FCC
-                Progression</a>
-        </p>
-        <p>a paragraph</p>
-        <p>a paragraph</p>
-    </div>
-    <div id="projects">
-        <h1 class="project-tile">
-            projects
-        </h1>
-        <h2>more text</h2>
-        <h3>more and more</h3>
-        <p id="project-link">check my project
-            <a href="https://williycole.github.io/Product_Landing_Page/" class="body-links">product landing page</a>
-        </p>
-        <p>a paragraph</p>
-        <p>a paragraph</p>
-    </div>
-    <div id="techs">
-        <h1 class="techs-title">
-            techs
-        </h1>
-        <h2>more text</h2>
-        <h3>more and more</h3>
-        <p>a paragraph</p>
-        <p>a paragraph</p>
-        <p>a paragraph</p>
-    </div>
-    <div id="contact">
-        <h1 class="contact-title">
-            contact
-        </h1>
-        <h2>more text</h2>
-        <h3>more and more</h3>
-        <p>check me out at
-            <a id="profile-link" href="https://github.com/williycole" target="_blank" class="body-links">GitHub</a>
-        <p>a paragraph</p>
-        <p>a paragraph</p>
-
-    </div>
-
 
 
 
