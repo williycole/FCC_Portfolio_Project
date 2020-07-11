@@ -1,14 +1,16 @@
+*{
+  /*font-family: 'Courier New', Courier, monospace;*/
+}
 html {
   font-size: 100%;
   box-sizing: border-box;
 }
-
 body {
   margin: 25px 0px;
   padding: 0px;
   min-height: 100vh;
-  background-color: #4b4a4aa8;
- 
+  background-color: #1b1b1b;
+  tex
 }
 *, *::before, *::after {
   box-sizing: inherit;
@@ -19,17 +21,26 @@ body {
   width: 100%;
   height: 80px;
   top: 0;
-      display: grid;
-      height: max-content;
-      grid-area: 3 / 3 / 4 / 7;
-      border-style: solid;
-      color: white;
-     
+  display: grid;
+  height: max-content;
+  grid-area: 3 / 3 / 4 / 7;
+  border-style: solid;
+  color: white;
 }
-#welcome-section{
+/*mobile view welcome*/
+#welcome-section  {
+  padding-top: 100px;
+  text-align: center;
+}
+/*desktop view welcome*/
+@media (min-width: 768px){ 
+  #welcome-section{
+  padding-top: 0px;
     height: 100vh;
     overflow: auto;
+  }
 }
+
 ul {
     text-align: center;
 }
@@ -38,40 +49,166 @@ ul {
         text-align: right;
     }
 }
-li.hover {
-    display:inline-block;
-    position: relative;
-  }
-  .hover::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height:2px;
-    bottom: 0;
-    left: 0px;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-    /*Below controls line thickness/position*/
-    padding-bottom: 3px; 
-    margin-bottom: 10px;
-  }
-  .hover:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    
-  }
-  li {
-    list-style: none;
-    word-wrap: break-word;
-    position: relative;
-    display: inline-block;
-    padding-top: 10px;
-  }
+/*-------------------hover 1 start*/
+li.hover1 {
+  display:inline-block;
+  position: relative;
+}
+.hover1::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height:2px;
+  bottom: 0;
+  left: 0px;
+  background-image: linear-gradient(to right,rgb(216, 29, 69),rgb(98, 16, 250));
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  /*Below controls line thickness/position*/
+  padding-bottom: 4px; 
+  margin-bottom: 4px;
+}
+.hover1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*----------------------hover 1 end*/
+/*-------------------hover 2 start*/
+li.hover2 {
+  display:inline-block;
+  position: relative;
+}
+.hover2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height:2px;
+  bottom: 0;
+  left: 0px;
+  background-image: linear-gradient(to right,rgb(98, 16, 250),rgb(39, 16, 250));
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  /*Below controls line thickness/position*/
+  padding-bottom: 4px; 
+  margin-bottom: 4px;
+}
+.hover2:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*----------------------hover 2 end*/
+/*-------------------hover 3 start*/
+li.hover3 {
+  display:inline-block;
+  position: relative;
+}
+.hover3::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height:2px;
+  bottom: 0;
+  left: 0px;
+  background-image: linear-gradient(to right,rgb(39, 16, 250),rgb(216, 29, 160));
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  /*Below controls line thickness/position*/
+  padding-bottom: 4px; 
+  margin-bottom: 4px;
+}
+.hover3:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*----------------------hover 3 end*/
+/*-------------------hover 4 start*/
+li.hover4 {
+  display:inline-block;
+  position: relative;
+}
+.hover4::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height:2px;
+  bottom: 0;
+  left: 0px;
+  background-image: linear-gradient(to right,rgb(216, 29, 160),rgb(216, 29, 69));
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  /*Below controls line thickness/position*/
+  padding-bottom: 4px; 
+  margin-bottom: 4px;
+}
+.hover4:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*----------------------hover 4 end*/
+/*-------------------hover 5 start*/
+li.hover5 {
+  display:inline-block;
+  position: relative;
+}
+.hover5::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height:2px;
+  bottom: 0;
+  left: 0px;
+  background-image: linear-gradient(to right,rgb(216, 29, 69),rgb(98, 16, 250));
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  /*Below controls line thickness/position*/
+  padding-bottom: 4px; 
+  margin-bottom: 4px;
+}
+.hover5:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*----------------------hover 5 end*/
+/*-------------------hover 6 start*/
+li.hover6 {
+  display:inline-block;
+  position: relative;
+}
+.hover6::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height:2px;
+  bottom: 0;
+  left: 0px;
+  background-image: linear-gradient(to right,rgb(216, 29, 160),rgb(39, 16, 250));
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  /*Below controls line thickness/position*/
+  padding-bottom: 4px; 
+  margin-bottom: 5px;
+}
+.hover6:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*----------------------hover 6 end*/
+li {
+  list-style: none;
+  word-wrap: break-word;
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+}
 /*Mobile nav links alignement*/
 .link-background {
-  text-align: center;
+  text-align: left;
 }
 /*Desktop nav links alignment*/
 @media (min-width: 800px){ 
@@ -81,51 +218,53 @@ li.hover {
 }
 /*Mobile*/
 .menu {
-    display: inline;
+  display: inline-block;
+    /*display: inline;*/
     position: relative;
-    padding: 0px;
-    margin-right: 0px; 
-        /*highlighting on nav-links*/
-        background-color: rgba(221, 62, 62, 0.945); 
+    padding: 15px;
+    margin: 10px ;
+    background-color:transparent; 
+    /*highlighting on nav-links*/
 }
 /*Desktop*/
 @media (min-width: 800px){ 
     .menu { 
-       display: inline;
-        position: relative;
-        padding: 0px;
-        margin-right: 0px; 
-        /*background inherted from mobile*/
+    display: inline;
+    position: relative;
+    padding: 0px;
+    margin: 0px; 
+    background-color: #3a383898;
+    /*background inherted from mobile*/
     }
 }
-/*Mobile*/
+a.body-links{
+  text-align: left;
+  transform: none;
+ }
+/*Mobile---this section holds text rotation*/
 a {
-    display: grid;
-    grid-template-columns: auto;
+  transform: rotate(-90deg);
+      display: flex;
 	box-sizing: border-box;
 	color:white;
 	text-transform: uppercase;
-	text-decoration: none;
-    
-    font-size: 15px;
-    padding-bottom: 10px;
-    margin-right: 20px;
-
+  text-decoration: none;
+  font-size: 15px;
+  padding-bottom: 5px;
+  margin: 2px;
+      align-items: baseline;
 }
-/*Desktop*/
+/*Desktop nav list words*/
 @media (min-width: 768px){ 
     a {
-    display: grid;
-	box-sizing: border-box;
-    color:white;
-    text-align: right;
-	text-transform: uppercase;
-	text-decoration: none;
-    
-    font-size: 20px;
-    padding-bottom: 10px;
-    margin-top: 0px;
-}
-.body-links{
- text-align: left;
+      transform: none;
+      display: grid;
+	    box-sizing: border-box;
+      color:white;
+      text-align: right;
+	    text-transform: uppercase;
+	    text-decoration: none;
+      font-size: 20px;
+      padding: auto;
+      margin-top: 0px;
 }
