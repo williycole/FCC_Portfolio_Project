@@ -110,6 +110,7 @@ body {
   margin-top: 50px;
   display: inline-flex;
 }
+/*li is the media platforms size and alignment*/
 i{
   display: block;
   text-align: center;
@@ -121,12 +122,53 @@ i{
 #topSkills {
   font-size: 28px;
 }
+/* #about{
+  background-color: #fffdd05d;
+}
+#skills{
+  
+  background-color: #fffdd05d;
+} */
 .bottom-border{
 border-width: 2px;
 border-bottom: solid;
 color: white;
 padding-bottom: 8px;
+font-size: 18px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 a.body-links {
   /* text-align: left; */
   transform: none;
