@@ -144,6 +144,7 @@ ul {
         text-align: right;/*possibly take out*/
     }
 }
+/*-----------------------------------------------------------------------ALL HOVER EFFECTS START HERE------------------------------------------------------------------------*/
 /*-------------------hover 1 start*/
 li.hover1 {
   display:inline-block;
@@ -300,6 +301,10 @@ li {
   position: relative;
   display: inline-block;
   padding-top: 10px;
+}
+/*-----------------------------------------------------------------------ALL HOVER EFFECTS END HERE------------------------------------------------------------------------*/
+.link-background2{
+  text-align: center;
 }
 /*Mobile nav links alignement*/
 .link-background {
