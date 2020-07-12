@@ -17,6 +17,7 @@ body::-webkit-scrollbar-thumb{
   #containerMyInfo{
   text-align: left;
   margin-left: 25%;
+  margin-right:20%;
   }
 }
 * {
@@ -39,7 +40,6 @@ body {
   color: white;
 }
 /*Mobile View*/
-
   main {
   border: 4px solid white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -69,7 +69,6 @@ body {
   border-style: solid;
   color: white;
   }
-
 /*mobile view welcome*/
 #welcome-section  {
   padding-top: 100px;
@@ -109,11 +108,9 @@ body {
 }
 #media-platforms{
   margin-top: 50px;
- 
   display: inline-flex;
- 
 }
-i {
+i{
   display: block;
   text-align: center;
   font-size: 50px;
@@ -125,6 +122,15 @@ i {
   font-size: 28px;
  
  
+}
+.bottom-border{
+border-width: 2px;
+border-bottom: solid;
+color: white;
+padding-bottom: 8px;
+
+
+
 }
 a.body-links {
   /* text-align: left; */
