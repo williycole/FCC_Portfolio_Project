@@ -86,9 +86,9 @@ body {
 #profile-pic-row {
   padding-top: 0px;
   }
-  #profile-pic {
-    width: 40%;
-    height: 40%;
+#profile-pic {
+  width: 40%;
+  height: 40%;
   border-radius: 50%;
   }
 /*Desktop view-profile picture section 
@@ -106,16 +106,21 @@ body {
   border-radius: 50%;
   }
 }
-#media-platforms{
+#media-platforms-top{
   margin-top: 50px;
   display: inline-flex;
 }
 /*li is the media platforms size and alignment*/
 i{
-  display: block;
-  text-align: center;
+  display: grid;
   font-size: 50px;
 }
+#media-platforms-bottom {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
 #welcome-name{
   font-size: 21px;
 }
