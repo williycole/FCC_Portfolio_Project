@@ -39,6 +39,21 @@ body {
   background-color: #1b1b1b;
   color: white;
 }
+                                                                  #navName {
+                                                                    /*nav pixelated name picture here*/
+                                                                  }
+#navbar {
+  position: fixed;
+  background-color: #1b1b1b;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  display: grid;
+  height: auto;/*watch this this has caused so much trouble */
+  grid-area: 3 / 3 / 4 / 7;
+  border-style: solid;
+  color: white;
+  }
 /*Mobile View*/
   main {
   border: 4px solid white;
@@ -54,21 +69,6 @@ body {
   margin-right: 15%;
   }
 }
-#navName {
-  /*nav pixelated name picture here*/
-}
-  #navbar {
-  position: fixed;
-  background-color: #1b1b1b;
-  width: 100%;
-  height: 80px;
-  top: 0;
-  display: grid;
-  height: auto;/*watch this this has caused so much trouble */
-  grid-area: 3 / 3 / 4 / 7;
-  border-style: solid;
-  color: white;
-  }
 /*mobile view welcome*/
 #welcome-section  {
   padding-top: 100px;
@@ -118,19 +118,14 @@ i{
 #welcome-name{
   font-size: 21px;
 }
-#whatIDo {
+#topSkills {
   font-size: 28px;
- 
- 
 }
 .bottom-border{
 border-width: 2px;
 border-bottom: solid;
 color: white;
 padding-bottom: 8px;
-
-
-
 }
 a.body-links {
   /* text-align: left; */
@@ -303,8 +298,15 @@ li {
   padding-top: 10px;
 }
 /*-----------------------------------------------------------------------ALL HOVER EFFECTS END HERE------------------------------------------------------------------------*/
+/*Mobile FCC Certs text alignment*/
 .link-background2{
   text-align: center;
+}
+/*Desktop FCC Certs text alignment*/
+@media (min-width: 768px){
+  .link-background2{
+  text-align: left;
+  }
 }
 /*Mobile nav links alignement*/
 .link-background {
