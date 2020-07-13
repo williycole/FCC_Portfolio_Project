@@ -37,11 +37,8 @@ body {
   padding: 0px;
   min-height: 100vh;
   background-color: #1b1b1b;
-  color: white;
+  color: #FAED26;
 }
-                                                                  #navName {
-                                                                    /*nav pixelated name picture here*/
-                                                                  }
 #navbar {
   position: fixed;
   background-color: #1b1b1b;
@@ -53,6 +50,7 @@ body {
   grid-area: 3 / 3 / 4 / 7;
   border-style: solid;
   color: white;
+  z-index: 9999;
   }
 /*Mobile View*/
   main {
@@ -109,6 +107,7 @@ body {
 #media-platforms-top{
   margin-top: 50px;
   display: inline-flex;
+  border-bottom: none;
 }
 /*li is the media platforms size and alignment*/
 i{
@@ -141,39 +140,21 @@ color: white;
 padding-bottom: 8px;
 font-size: 18px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*--------section heading spacing and background color skew start------*/
+.heading-background {
+  background-color: #8E8D8D;
+  width: 95%;
+  height: auto;
+  transform:skew(-30deg);
+}
+.section-title{
+  margin-top: 100px;
+  width: auto;
+  height: auto;
+  transform:skew(30deg);
+  color:blue
+}
+/*---------section heading spacing and background color skew end-------*/
 a.body-links {
   /* text-align: left; */
   transform: none;
@@ -345,6 +326,7 @@ li {
   padding-top: 10px;
 }
 /*-----------------------------------------------------------------------ALL HOVER EFFECTS END HERE------------------------------------------------------------------------*/
+/*--------------Backgroungs for all text, nav, h1, etc start here----------*/
 /*Mobile FCC Certs text alignment*/
 .link-background2{
   text-align: center;
@@ -389,19 +371,113 @@ li {
     /*background inherted from mobile*/
     }
 }
+/*--------------Backgroungs for all text, nav, h1, etc end here----------*/
+/* -------------------------------------------------------------------------Flipcard Effects Start here-------------------------------------------------------------------------- */
+/*Desktop View Projects container*/
+@media (min-width: 768px){
+  #projects-container{
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 10px;
+  }
+}
+.under-construction{
+  background-color: yellow;
+  color: black;
+  font-weight: 700;
+}
+.card-a {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.card-b {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.card-c {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.card-d {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.card-e {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.card-f {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+@media (min-width: 800px){ 
+  .projects-container { 
+  display: inline;
+  position: relative;
+  padding: 0px;
+  margin: 0px; 
+  background-color: none;
+  /*background inherted from mobile*/
+  }
+}
+.projects-screen-capture{
+width: 100%;
+ height: 100%;
+}
+.flip-card {
+  padding:10px;
+ background-color: transparent;
+ width: 100%;
+ height: 220px;
+ border: 1px solid #f1f1f1;
+ perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+/*front and back side position*/
+.flip-card-inner {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ text-align: center;
+ transition: transform 0.8s;
+ transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+ transform: rotateY(180deg);
+}
+/*front and back position */
+.flip-card-front, .flip-card-back {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ -webkit-backface-visibility: hidden; /* Safari */
+ backface-visibility: hidden;
+}
+/*front card background*/
+.flip-card-front {
+ border-style: solid;
 
-
-
-
-
-
-
-
-
-/*-----------------------------------------------Possibly get rid of this part or find a more inventive way to do it, like maybe your name pops up from the bottom of the nav where something 
-says see more here or a more creative burger------------------------------------------------*/
-
-
+ color: white;
+}
+/*back card back ground*/
+.flip-card-back {
+  background-color: wheat;
+ color:black;
+  transform: rotateY(180deg);
+} 
+/* -------------------------------------------------------------------------Flipcard Effects End here-------------------------------------------------------------------------- */
 a {
   display: block;/*controls the links place*/
   /* text-align: center; */
@@ -427,4 +503,5 @@ a {
       font-size: 20px;
       padding: auto;
       margin-top: 0px;
+    }
 }
