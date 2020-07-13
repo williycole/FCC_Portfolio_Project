@@ -439,12 +439,20 @@ li {
   grid-gap: 10px;
   }
 }
+/*project links start*/
 .project-link {
   color:#4C8593;
   font-size: 15px;
   font-weight: 700;
   text-decoration: underline;
 }
+.project-tile {/*named one secition this way for passing test for fcc*/
+  color:#4C8593;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+/*project links end*/
 .backCard-text-size-and-color{
   color: black;
   font-size: 13px;
