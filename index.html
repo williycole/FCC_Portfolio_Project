@@ -13,20 +13,21 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <div class="link-background">
-            <ul class="menu">
-                <li id="navName">
-                    <!--make cool pixelated name/picture here-->
-                </li>
-                <li><a href="#welcome-section" class="hover1">Home</a></li>
-                <li><a href="#about" class="hover2">About</a></li>
-                <li><a href="#skills" class="hover3">Skills</a></li>
-                <li><a href="#projects" class="hover4">Projects</a></li>
-                <li><a href="#techs" class="hover5">Techs</a></li>
-                <li><a href="#contact" class="hover6">Contact</a></li>
-            </ul>
-        </div>
+    <nav id="nav-bar" class="navbar">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <!--Had some help with converting my nav menu to a burger in mobile.
+            I followed @mutedblues codepen example to figure out how to get mine to work.
+             I just wanted to put a well deserved thankyou in my code and give credit where it is due https://codepen.io/mutedblues-->
+        <ul class="menu">
+            <li><a href="#welcome-section" class="hover1">Home</a></li>
+            <li><a href="#about" class="hover2">About</a></li>
+            <li><a href="#skills" class="hover3">Skills</a></li>
+            <li><a href="#projects" class="hover4">Projects</a></li>
+            <li><a href="#techs" class="hover5">Techs</a></li>
+            <li><a href="#contact" class="hover6">Contact</a></li>
+        </ul>
+
     </nav>
     <!--_______________________________________this is the whole page div_________________________________________--->
     <main>
@@ -55,7 +56,7 @@
         <div id="containerMyInfo">
             <div id="about" class="bottom-border">
                 <div class="heading-background">
-                    <h1 class="section-title">
+                    <h1 class="heading-title">
                         About
                     </h1>
                 </div>
@@ -88,7 +89,7 @@
             </div>
             <div id="skills">
                 <div class="heading-background">
-                    <h1 class="section-title">
+                    <h1 class="heading-title">
                         Skills
                     </h1>
                 </div>
@@ -117,215 +118,95 @@
                         to gain additiona insite from industry
                         professionals.
                     </p>
-
-                    <div class="link-background2">
+                </div>
+                <!-- <div class="link-background2">
                         <ul class="menu">
                             <li><a href="https://williycole.github.io/FCCGridCertTracker/" class="hover2">Check
                                     out my
                                     Certificaitons</a></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-            <!--Projects Sections Start-->
-            <div id="projects" class="bottom-border">
-                <div class="heading-background">
-                    <h1 class="section-title" class="project-tile">
-                        Projects & Past Work
-                    </h1>
-                </div>
-                <!--Projects container Start-->
-                <div id="projects-container">
-                    <!--____________________________-->
-                    <!--Project 1 start-->
-                    <div class="flip-card" class="card-a">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img id="image" src="Projects/ProductLandingPage.jpg"
-                                    alt="This is a screen caputre of my Product Landing Page for my Free code camp certificaiton"
-                                    class="projects-screen-capture" />
-                            </div>
-                            <div class="flip-card-back">
-                                <div> <a href="https://williycole.github.io/Product_Landing_Page/">
-                                        <span class="project-tile">View</span></a>
-                                </div>
-                                <p><span class="backCard-text-size-and-color">Product Landing page I made while
-                                        obtaining a
-                                        FCC certificaitons, site base
-                                        on
-                                        the SNL skits with Hanz and Franz.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project 1 end-->
-                    <!--Project 2 start-->
-                    <div class="flip-card" class="card-b">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img id="image" src="Projects/TechnicalDocumentPage.jpg"
-                                    alt="This is a screen caputre of my Product Landing Page for my Free code camp certificaiton"
-                                    class="projects-screen-capture" />
-                            </div>
-                            <div class="flip-card-back">
-                                <div> <a href="https://williycole.github.io/Technical_Document_Page/">
-                                        <span class="project-link">View</span></a>
-                                </div>
-                                <p><span class="backCard-text-size-and-color">Technical Document/Tutorial on C
-                                        programming
-                                        that I build after learning
-                                        about
-                                        programming in C.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project 2 end-->
-                    <!--Project 3 start-->
-                    <div class="flip-card" class="card-c">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img id="image" src="Projects/PhotoPortfolioTemplate.jpg"
-                                    alt="This is a screen caputre of my Product Landing Page for my Free code camp certificaiton"
-                                    class="projects-screen-capture" />
-                            </div>
-                            <div class="flip-card-back">
-                                <div> <a href="https://williycole.github.io/Photo_portfolio_Template/">
-                                        <span class="project-link">View</span></a>
-                                </div>
-                                <p><span class="backCard-text-size-and-color">Photo Portfolio Template I made while
-                                        obtainng
-                                        a Udemy Certification.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project 3 end-->
-                    <!--Project 4 start-->
-                    <div class="flip-card" class="card-d">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img id="image" src="Projects/SurveyFormPage.jpg"
-                                    alt="This is a screen caputre of my Product Landing Page for my Free code camp certificaiton"
-                                    class="projects-screen-capture" />
-                            </div>
-                            <div class="flip-card-back">
-                                <div> <a href="https://williycole.github.io/surveyform/">
-                                        <span class="project-link">View</span></a>
-                                </div>
-                                <p><span class="backCard-text-size-and-color">Survey Form for tracking USAPL Powerlifing
-                                        meet Experiance and rating the
-                                        overall meet and Juding Competency.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project 4 end-->
-                    <!--Project 5 start-->
-                    <div class="flip-card" class="card-e">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img id="image" src="Projects/MadisonBorenInteriors.jpg"
-                                    alt="This is a screen caputre of my Product Landing Page for my Free code camp certificaiton"
-                                    class="projects-screen-capture" />
-                            </div>
-                            <div class="flip-card-back">
-                                <div> <a href="#">
-                                        <span class="project-link">View</span></a>
-                                </div>
-                                <p><span class="backCard-text-size-and-color">This is a page I am building with
-                                        wordpress for a local small buisness
-                                        to further my freelance skills while I learn.
-                                        Currently
-                                        under Construction</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project 5 end-->
-                    <!--Project 6 start-->
-                    <div class="flip-card" class="card-f">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img id="image" src="Projects/TributePage.jpg"
-                                    alt="This is a screen caputre of my Product Landing Page for my Free code camp certificaiton"
-                                    class="projects-screen-capture" />
-                            </div>
-                            <div class="flip-card-back">
-                                <div> <a href="https://williycole.github.io/tributepage/">
-                                        <span class="project-link">View</span></a>
-                                </div>
-                                <p><span class="backCard-text-size-and-color">The first page I ever built. Complete with
-                                        a
-                                        mimic CSS Linux Terminal.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project 6 end-->
-                    <!--Projects container End-->
-                </div>
-                <!--__________________________________-->
-            </div>
-            <!--Projects Section Ends Here-->
-            <!--techs div starts here-->
-            <div id="techs" class="bottom-border">
-                <div class="heading-background">
-                    <h1 class="section-title">
-                        Techs
-                    </h1>
-                </div>
-                <h2>What I use</h2>
-                <h3>
-                    <i class="fab fa-html5"><span class="tech-text">HTML</span></i>
-                    <i class="fab fa-css3-alt"><span class="tech-text">CSS</span></i>
-                    <i class="fab fa-js-square"><span class="tech-text">JavaScript</span></i>
-                    <i class="fab fa-wordpress"><span class="tech-text">WordPress</span></i>
-                    <i class="fab fa-google-play"><span class="tech-text">Google Play</span></i>
+                    </div> -->
 
-
-                    <i class="fab fa-bootstrap"><span class="tech-text">Bootstrap</span></i>
-                    <i class="fab fa-linux"><span class="tech-text">Linux OS</span></i>
-                    <i class="fas fa-terminal"><span class="tech-text">Bash Scripting</span></i>
-                    <i class="fab fa-php"><span class="tech-text">PHP</span></i>
-                </h3>
-            </div>
-            <!--techs div ends here-->
-            <!-- contact div starts here -->
-            <div id="contact">
-                <div class="heading-background">
-                    <h1 class="section-title">
-                        Contact
-                    </h1>
-                </div>
-                <!--Media Platforms Start here ___________this a a grid also -->
-                <div id="media-platforms-bottom">
-                    <a href="https://github.com/williycole">
-                        <i class="fab fa-github-square"></i>
-                    </a>
-                    <a href="https://www.freecodecamp.org/williy_cole">
-                        <i class="fab fa-free-code-camp"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/cole-boren-4b0b3a50/">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://codepen.io/williycole">
-                        <i class="fab fa-codepen"></i>
-                    </a>
-                    <a href="mailto:william.cole.boren@gmail.com">
-                        <i class="far fa-envelope"></i>
-                    </a>
-                    </a>
-                    <a href="tel:9013781160">
-                        <i class="fas fa-phone-square-alt"></i>
-                    </a>
-                    <a
-                        href=" https://docs.google.com/document/d/1ZkHJE8ymp_iZSxTKaDaD-eBm9CxfCjL_fd1_b4ywJX8/export?format=pdf">
-                        <i class="fas fa-file"></i>
-                    </a>
+                <!--Projects Section Starts Here-->
+                <div id="projects" class="bottom-border">
+                    <div class="heading-background">
+                        <h1 class="heading-title">
+                            Projects & Past Work
+                        </h1>
+                    </div>
+                    <div class="projects-containter">
+                        <img src="Projects/ProductLandingPage.jpg" class="projects-img">
+                        <img src="Projects/TechnicalDocumentPage.jpg" class="projects-img">
+                        <img src="Projects/SurveyFormPage.jpg" class="projects-img">
+                        <img src="Projects/PhotoPortfolioTemplate.jpg" class="projects-img">
+                        <img src="Projects/MadisonBorenInteriors.jpg" class="projects-img">
+                        <img src="Projects/TributePage.jpg" class="projects-img">
+                    </div>
                 </div>
 
-                <!-- contact div ends here -->
-            </div>
-            <!--_______________________________________this is the whole page div_________________________________________--->
+                <!--Projects Section Ends Here-->
+                <!--techs div starts here-->
+                <div id="techs" class="bottom-border">
+                    <div class="heading-background">
+                        <h1 class="heading-title">
+                            Techs
+                        </h1>
+                    </div>
+                    <h2>What I use</h2>
+                    <h3>
+                        <i class="fab fa-html5"><span class="tech-text">HTML</span></i>
+                        <i class="fab fa-css3-alt"><span class="tech-text">CSS</span></i>
+                        <i class="fab fa-js-square"><span class="tech-text">JavaScript</span></i>
+                        <i class="fab fa-wordpress"><span class="tech-text">WordPress</span></i>
+                        <i class="fab fa-google-play"><span class="tech-text">Google Play</span></i>
+                        <i class="fab fa-bootstrap"><span class="tech-text">Bootstrap</span></i>
+                        <i class="fab fa-linux"><span class="tech-text">Linux OS</span></i>
+                        <i class="fas fa-terminal"><span class="tech-text">Bash Scripting</span></i>
+                        <i class="fab fa-php"><span class="tech-text">PHP</span></i>
+                    </h3>
+                </div>
+                <!--techs div ends here-->
+                <!-- contact div starts here -->
+                <div id="contact">
+                    <div class="heading-background">
+                        <h1 class="heading-title">
+                            Contact
+                        </h1>
+                    </div>
+                    <!--Media Platforms Start here ___________this a a grid also -->
+                    <div id="media-platforms-bottom">
+                        <a href="https://github.com/williycole" target="_blank">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                        <a href="https://www.freecodecamp.org/williy_cole" target="_blank">
+                            <i class="fab fa-free-code-camp"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/cole-boren-4b0b3a50/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://codepen.io/williycole" target="_blank">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                        <a href="mailto:william.cole.boren@gmail.com" target="_blank">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                        </a>
+                        <a href="tel:9013781160">
+                            <i class="fas fa-phone-square-alt"></i>
+                        </a>
+                        <a
+                            href=" https://docs.google.com/document/d/1ZkHJE8ymp_iZSxTKaDaD-eBm9CxfCjL_fd1_b4ywJX8/export?format=pdf">
+                            <i class="fas fa-file"></i>
+                        </a>
+                    </div>
+
+                    <!-- contact div ends here -->
+                </div>
+                <!--_______________________________________this is the whole page div_________________________________________--->
     </main>
     <!--_______________________________________this is the whole page div_________________________________________--->
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 
 </body>
 
