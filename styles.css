@@ -1,7 +1,9 @@
 :root{
   font-size: 24px;
 }
+.projects-containter{
 
+}
 body::-webkit-scrollbar {
   width:0.25rem; 
 }
@@ -115,7 +117,7 @@ a {
       margin-top: 0px;
     }
 }
-
+/*  */
 /*Mobile View*/
 .nav-bar {
   background-color: #1b1b1b;
@@ -346,8 +348,14 @@ i{
 .bottom-border{
   border-bottom: 6px solid #5A6AA1;
 }
+.heading-title{
+  margin-top: 100px;
+  width: auto;
+  height: auto;
+  transform:skew(30deg);
+  color:#EDC978;
+  }
 /*Mobile View*/
-@media (min-width: 7680px){
   .heading-background {
   background-color: #4C8593;
   width: 85%;
@@ -355,26 +363,17 @@ i{
   transform:skew(-30deg);
   margin-left: 22px;
   }
-}
+
 /*Desktop View*/
 /*-------section heading spacing and background color skew start------*/
 @media (min-width: 770px){
 .heading-background {
   background-color: #4C8593;
-  width: 95%;
+  width: 90%;
   height: auto;
   transform:skew(-30deg);
   padding-left: 5px;
-  }/*NOTE TO SELF:Here I nested the  heading title"font contorls"
-   inside the media quiery for the background, this let me write less code, 
-   and learn a bit more about media quiries can "play  in the process.*/
-    .heading-title{
-    margin-top: 100px;
-    width: auto;
-    height: auto;
-    transform:skew(30deg);
-    color:#EDC978;
-    }
+  }
 }
 /*---------section heading spacing and background color skew end-------*/
 a.body-links {
@@ -390,8 +389,7 @@ ul {
     }
 }
 /*--------------Projects section starts here----------*/
-#project-container {
-  
+.projects-container {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -401,8 +399,8 @@ img {
 }
 @media (min-width: 770px){
   img {
-width: 200px;
-height:200px;
+width: 189px;
+height:189px;
 margin-left: 4%;
   }
 } 
