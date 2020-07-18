@@ -1,9 +1,6 @@
 :root{
   font-size: 24px;
 }
-.projects-containter{
-
-}
 body::-webkit-scrollbar {
   width:0.25rem; 
 }
@@ -91,8 +88,6 @@ p {
 }
 /*Mobile nav list words*/
 a {
-                /* display: block;controls the links place */
-              /* text-align: center; */
 	box-sizing: border-box;
 	text-transform: uppercase;
   text-decoration: none;
@@ -117,7 +112,6 @@ a {
       margin-top: 0px;
     }
 }
-/*  */
 /*Mobile View*/
 .nav-bar {
   background-color: #1b1b1b;
@@ -403,7 +397,62 @@ width: 189px;
 height:189px;
 margin-left: 4%;
   }
-} 
+}
+/*Mobile View*/
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+ color:#EDC978;
+  background-color: #4C8593;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  }
+  .button:hover {
+  background-color:#5A6AA1;
+  }
+/*Desktop View*/ 
+@media (min-width: 1477px){
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color:#EDC978;
+    background-color: #4C8593;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  .button:hover {
+    background-color:#5A6AA1;
+  }
+}
 
 /*--------------Projects section ends here----------*/
 /*-----------------------------------------------------------------------ALL HOVER EFFECTS START HERE------------------------------------------------------------------------*/
