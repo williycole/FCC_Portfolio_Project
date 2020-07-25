@@ -275,6 +275,7 @@ a {
     height:200px;
     border-radius: 50%;
 }
+/*Desktop view- profile picture*/
  @media(min-width: 768px){
  #profile-pic {
  display: block;
