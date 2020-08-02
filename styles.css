@@ -384,9 +384,22 @@ ul {
     }
 }
 /*--------------Projects section starts here----------*/
+
 .projects-container {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ justify-items: center;
+ align-items: center; 
+ justify-self: center;
+}
+
+.projects-img {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  align-items: center; 
+  align-self: center;
+  justify-self: center;
 }
 /*Desktop View*/
   img {
@@ -433,6 +446,13 @@ margin-left: 10%;
   }
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    align-items: center; 
+    align-self: center;
+    justify-self: center;
+    grid-gap: 10px;
   }
   .container {
     padding: 0 16px;
