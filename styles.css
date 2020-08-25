@@ -1,7 +1,7 @@
 :root{
   font-size: 24px;
 }
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width:0.25rem; 
 }
 body::-webkit-scrollbar-track {
@@ -9,7 +9,7 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb{
   background: #5A6AA1;
-}
+} */
 /*Mobile view, content/info margins*/
 #containerMyInfo{
   text-align: center;
@@ -405,14 +405,14 @@ ul {
   img {
   width: 200px;
   height:200px;
-  margin-left: 3%;
+  /* margin-left: 3%; */
   }
 /*Mobile View*/
 @media (max-width: 1435px){
   img {
 width: 189px;
 height:189px;
-margin-left: 10%;
+/* margin-left: 10%; */
   }
 }
 /*Mobile View*/
