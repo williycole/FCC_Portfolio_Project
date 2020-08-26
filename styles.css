@@ -99,6 +99,7 @@ p {
 /*Desktop view*/
 @media (min-width: 768px){ 
   p {
+  padding: 10px;
   color:#FFFBF3;
   font-family: 'Arvo', serif;
   font-size: 22px;
